@@ -1,7 +1,7 @@
+/*Js bar  chart styling*/
 #each-bar-div {
     background-color: darkred;
 }
-
 
 #main-wrapper-div {
     display: flex;
@@ -19,7 +19,6 @@
     justify-content: center;
     width: 30%;
 }
-
 
 .div-el-class {
     width: 30%;
@@ -46,7 +45,6 @@
     align-items: flex-end;
 }
 
-
 #y-osis {
     display: flex;
     width: 150px;
@@ -67,10 +65,32 @@
 }
 
 
-
-
 .paragraph-class {
     widows: 50px;
     height: 30px;
     border: 2px solid green;
 }
+
+/*Js bar  chart styling*/
+
+
+
+
+/*Canvas line chart styling*/
+canvas {
+    border: 1px solid black;
+}
+
+
+.flex-container-div-1 {
+    display: flex;
+    justify-content: center;
+    margin-top: 10%;
+}
+
+#graph {
+    background-color: lightgray;
+
+}
+
+/*Canvas line chart styling*/

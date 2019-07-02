@@ -48,4 +48,6 @@ function findTopNode(flatArr) {
     }
 };
 
-//console.log("one test example:",findTopNode([]));
+//console.log("one test example for if/else:",findTopNode([]));
+
+
