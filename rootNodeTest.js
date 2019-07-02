@@ -1,4 +1,5 @@
-var root = findTopNode(flat)
+
+let root = findTopNode(flat)
 
 describe('Testing the functionality, this is the app', () => {
     it('should return Array', () => {
@@ -7,6 +8,9 @@ describe('Testing the functionality, this is the app', () => {
         boolean2 = Array.isArray(root);
         boolean3 = Object.prototype.toString.call(root) === '[object Array]'; // []
         expect(boolean1 && boolean2 && boolean3).toBe(true);
+        expect(boolean1).toBe(true)
+        expect(boolean2).toBe(true)
+        expect(boolean3).toBe(true)
     })
     it('Array value should be object/objects', () => {
         let boolean1
@@ -15,7 +19,6 @@ describe('Testing the functionality, this is the app', () => {
         });
         boolean1 = ifIsObject.indexOf(false);
         expect(boolean1).toBe(-1);
-
     })
     it('should be top/highest node/nodes', () => {
         let flat = [{id: 4,parent_id: 1}]
@@ -29,7 +32,6 @@ describe('Testing the functionality, this is the app', () => {
         let flat8 = [{ id: 7, parent_id: 1}, { id:1, parent_id:0}, {id:155, parent_id:null}, {id:222,parent_id:0}]
         let flat9 = [{ id: 244, parent_id: 1}, { id:13, parent_id:0}, {id:155, parent_id:null}, {id:222,parent_id:0}]
 
-
         expect(findTopNode(flat)).toEqual([flat[0]]);
         expect(findTopNode(flat1)).toEqual([flat1[1]]);
         expect(findTopNode(flat2)).toEqual([flat2[1]]);
@@ -38,14 +40,11 @@ describe('Testing the functionality, this is the app', () => {
         expect(findTopNode(flat5)).toEqual([flat5[2]]);
         expect(findTopNode(flat6)).toEqual([flat6[2]]);
         expect(findTopNode(flat7)).toEqual([flat7[1]]);
-        expect(findTopNode(flat8)).toEqual( [flat8[2], flat8[1], flat8[3] ]);
-        expect( findTopNode(flat8)[0] ).toBe( flat8[2]);
+        expect(findTopNode(flat8)).toEqual([flat8[2], flat8[1], flat8[3]]);
+        expect(findTopNode(flat8)[0]).toBe(flat8[2]);
         expect(findTopNode(flat9)[0]).toBe(flat9[2]);
         expect(findTopNode(flat1)[0]).toBe(flat1[1])
         expect(findTopNode(flat2)[0]).toBe(flat2[1])
         expect(findTopNode(flat3)[0]).toBe(flat3[1])
     })
 });
-
-
-
